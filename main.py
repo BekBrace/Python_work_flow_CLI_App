@@ -1,11 +1,12 @@
 """
 This program keeps track of all of our books
-version : 1.0.0
+version : 2.0.0
 Date :15.05.2022
 """
 
-def main():
 
+def main():
+    
     try:    
         # initialize books list
         booksList = []
@@ -34,8 +35,9 @@ def main():
             print("Addig a book...")
             nBook = input("Enter the name of the book >>>")
             nAuthor = input("Enter the name of the author >>>")
+            rBefore = input("Have you read it before ? >>>")
             nPages = input("Enter the number of pages >>>")
-            booksList.append([nBook, nAuthor, nPages])
+            booksList.append([nBook, nAuthor, rBefore, nPages])
         
         elif choice == 2:
             print("Looking up for a book...")
